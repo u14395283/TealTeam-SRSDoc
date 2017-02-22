@@ -61,8 +61,15 @@
 		\subsubsection{Time to Determine Position} It should take NavUP no longer than 45 seconds to determine the location of the device (with reasonable accuracy) once the application has been opened.
 		\subsubsection{Immidiacy of Push Notifications} Relevant push notifications should be pushed to the user's device no further than 30m from the focus of said notification. For example, current events at the AULA should not be displayed if a user is further than 30m from the AULA, to prevent cluttering of the notification bar.
 		\subsubsection{View/Location Updates} Updates of the user's current location as displayed on the device screen should take place at intervals of no more than 5 seconds.
-		\subsubsection{Application Size} The application, once installed, should consume no more than 150mb of storage space on the user's device. This includes cached maps and saved profile data.
 		\subsubsection{User Login} Upon providing the system with correct credentials, the application must present the user with the navigation screen within 7 seconds. 
 	\subsection{Design Constraints}
+		\subsubsection{Operating System/Platform} The system must be accessible from both Android and iOS devices - natively.		
 	\subsection{Software System Attributes}
+		\subsubsection{Reliability} The system should never cease working completely unless the error is caused by external systems outside our control (operating system, web APIs, etc). Decoupling should be such that modules, such as information on landmarks, should still be accessible if navigation fails. Ideally an entire system uptime (per month) of 99.9\% must be reached.
+		\subsubsection{Maintainability} The system's code must be well documented, both by means of in-code comments and external documentation, to aid in maintaining the system.
+		\subsubsection{Security \& Privacy} NavUP will allow user profiles to be created and personal information to be stored, no unauthorized users should have access to another user's information. Only administrators or the owner of the profile in question should have access to a profile's data.
+		\subsubsection{Portability} The system must be available on both Android and iOS devices.
+		\subsubsection{Scalability} It must be possible to scale the system backend in the event of an increase of users. Scaling must be possible both horizontally or vertically.
+		\subsubsection{Response time} Following user interaction, the system may not delay more than 2 seconds before providing the user with feedback.
+		\subsubsection{Usability} NavUP's core functions (navigation, news updates, suggestions) must be easy to understand and use. They must not take the average user more than a minute, each, to access and understand. 
 \end{document}
