@@ -98,11 +98,57 @@ This document will provide more details abut the product (NavUp), including diff
 		\subsubsection{Use Case Prioritization}
 			\begin{itemize}
 				\item Critical
-				\begin{itemize}
-					\item User identifies destination
-					\item Application determines location
-				\end{itemize}
+					\begin{itemize}
+						\item User identifies destination
+						\item Application determines location
+						\item A user must be able to see building names as he passes them
+						\item A user must specify  the kind of access
+						\item A user must be able to see the campus map without searching for a location
+						\item Venues should be grouped into categories
+							\begin{itemize}
+							\item A user must select a destination from category without typing it out
+							\end{itemize}
+						\item A user must see all the routes o the venue
+							\begin{itemize}
+								\item Disabilities
+								\item Avoiding pedestrian traffic congestion
+							\end{itemize}
+						\item The user must be able to see arrival time
+					\end{itemize}
+				\item important
+					\begin{itemize}
+						\item The UP admin must be able to update venues
+						\item The app must sync with the university calendar
+						\item The events manager must be able to update events on the app
+						\item Venues must be associated with events going to take place there
+ 						\item The UP student societies must be able to update their calendars on the app
+						\item Log all activities
+						\item Log user preferences
+					\end{itemize}
+				\item Nice To Have
+					\begin{itemize}
+						\item Fitness track
+						\item A brief history about campus building as the user passes them
+						\item Reward system if certain milestones archived
+						
+					\end{itemize}
+
 			\end{itemize}
+		
+		\subsection{Use Cases And Actor-Interaction}
+			\begin{itemize}
+				\item Figure1: Login
+					\includegraphics[width = 6cm, height = 10cm]{Login.JPG}
+				\item Figure2: Select Destination
+					\includegraphics[width = 6cm, height = 10cm]{Select_Destination.JPG}
+				\item Figure3: Route User
+					\includegraphics[width = 6cm, height = 10cm]{Route_User.JPG}
+				\item Figure4: Login
+					\includegraphics[width = 6cm, height = 10cm]{Login.JPG}
+				\item Figure5: User fitness
+					\includegraphics[width = 6cm, height = 10cm]{User_fitness.JPG}
+			\end{itemize}
+		
 	\subsection{Performance Requirements}
 		\subsubsection{Position Accuracy} The position of a device with NavUP activated should be accurately determined by the system - with no more than 15m of deviation from actual location of the device.
 		\subsubsection{Time to Determine Position} It should take NavUP no longer than 45 seconds to determine the location of the device (with reasonable accuracy) once the application has been opened.
