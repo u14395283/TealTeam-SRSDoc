@@ -208,7 +208,52 @@ for multiple users at the same time, this is to say, the system’s performance 
 
 	\end{itemize}
 	\end{center}
-		
+			\section{Test Cases}
+			\subsection{Application Cold Start} %1.1
+			\subsection{Application Warm Start} %1.2
+			\subsection {Authentication} %1.3
+			\subsection{Application Minimized} %1.4
+			\subsection{Continuity} %1.5
+			\subsection{Walk in Wrong Direction} %1.6
+			\subsection{Traffic Congestion} %1.7
+			\subsection{Accuracy} %1.8
+			\subsection{Drawing Track} %1.9
+			\subsection{Memory} %1.10
+			\subsection{Computation Time} %1.11
+			\subsection{Availability and Integrity (With Wi-Fi networking)} %1.12
+\begin{flushleft}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+
+\hline
+ & \textbf{Test Cases} & 4.1 & 4.2 & 4.3 & 4.4 & 4.5 & 4.6 & 4.7 & 4.8 & 4.9 & 4.10 & 4.11 & 4.12 \\
+\hline
+\textbf{Req.} & & & & & & & & & & & & & \\
+\hline
+RQ1 UC1.1 & & & & X & & & & & & & & & \\
+\hline
+RQ1 UC1.2 & & & & X & X & X & & & & & & & \\
+\hline
+RQ2 UC2.1 &  & X & X & & & & &  & X & X & & & \\
+\hline
+RQ2 UC2.2 & & & & & & & & & X & X & & & \\
+\hline
+RQ2 UC2.2.1 & & & & & & & & & & & X & X & \\
+\hline
+RQ2 UC2.2.2 & & & & & X & & & X & X & X & & & \\
+\hline
+RQ3 UC3.1 & & & X & & & & & X & X & X & & & \\
+\hline
+RQ3 UC3.2 & & & & & & X & X & X & X & X & & & \\
+\hline
+RQ4 UC4.1 & & X & X & & & & & & & & & & X \\
+\hline
+RQ4 UC4.2 & & X & X & & & & & & X & & & & X \\
+\hline
+RQ4 UC4.3 & & & & & & & & & & & & & X \\
+\hline
+\end{tabular}
+Figure 6: Requirement Traceability Matrix
+\end{flushleft}	
 	\subsection{Performance Requirements}
 		\subsubsection{Position Accuracy} The position of a device with NavUP activated should be accurately determined by the system - with no more than 15m of deviation from actual location of the device.
 		\subsubsection{Time to Determine Position} It should take NavUP no longer than 45 seconds to determine the location of the device (with reasonable accuracy) once the application has been opened.
