@@ -1,0 +1,411 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Paragraph
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Section
+
+Product functions:
+\end_layout
+
+\begin_layout Paragraph
+
+	This system would allow different user types to navigate around the University
+ of Pretoria's main campus grounds.
+\end_layout
+
+\begin_layout Paragraph
+
+	This system would include three different types of users, namely: a student;
+ a staff member and a visitor.
+ All three
+\end_layout
+
+\begin_layout Paragraph
+
+	users of the system would be able search for specific buildings and receive
+ a guided path from their current position 
+\end_layout
+
+\begin_layout Paragraph
+
+	to the searched area.
+ The student and staff member users would both be able to search for events
+ happening on 
+\end_layout
+
+\begin_layout Paragraph
+
+	the main campus grounds and be able to save their searched areas for quick
+ searches in future use.
+ The system
+\end_layout
+
+\begin_layout Paragraph
+
+	will also have restricted areas so as not to lead users through restricted
+ areas.
+ Popular areas, such as the food court,
+\end_layout
+
+\begin_layout Paragraph
+
+	will be ready to choose options making them easier and quicker to find.
+ Emergency gathering areas will also be highlighted
+\end_layout
+
+\begin_layout Paragraph
+
+	and highly visible to all users.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Section
+
+User characteristics:
+\end_layout
+
+\begin_layout Paragraph
+
+	There will be three user types, the student; the staff member and the visitor.
+ All users will be able to access
+\end_layout
+
+\begin_layout Paragraph
+
+	the basic functionalities of the system.
+ They will be all be able to search for a location on the main campus 
+\end_layout
+
+\begin_layout Paragraph
+
+	of University of Pretoria.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	A visitor user will be limited to searching for their conference or building
+ that they
+\end_layout
+
+\begin_layout Paragraph
+
+	require as the rest of the functionality will be of no interest to them.
+ 
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	The student user will have access to basic finctionality of the system
+ but will reeive push notifications of special events on
+\end_layout
+
+\begin_layout Paragraph
+
+	campus such as a conference on the field of study or a club performing
+ a showcase.
+ This functionality will be 
+\end_layout
+
+\begin_layout Paragraph
+
+	customizable for each user to choose the interests.
+\end_layout
+
+\begin_layout Paragraph
+
+	
+\end_layout
+
+\begin_layout Paragraph
+
+	The staff member user will receive basic access to the system along with
+ routes to restricted areas, upcoming conference
+\end_layout
+
+\begin_layout Paragraph
+
+	locations and special events on campus.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Section
+
+Constraints:
+\end_layout
+
+\begin_layout Paragraph
+
+	The accuracy of this system will be limited as there is not Wi-Fi signal
+ across the entire main campus.
+ Most of the
+\end_layout
+
+\begin_layout Paragraph
+
+	system's functionalities will be unavailable without internet access for
+ the user.
+ This is particularily problematic
+\end_layout
+
+\begin_layout Paragraph
+
+	near the gates of the campus as the user will have to use their own internet
+ connections.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	To detect the traffic density on campus, most people on campus will have
+ to be connected and their location trcked.
+\end_layout
+
+\begin_layout Paragraph
+
+	This becomes problematic when users are not connected as the traffic density
+ will become inaccurate.
+ Another potential
+\end_layout
+
+\begin_layout Paragraph
+
+	problem with this is the strain the users will put on the system when many
+ users are on campus simultaneously.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	This system will also rely on the University of Pretoia's calendar which
+ require the calendar be up to date constantly.
+\end_layout
+
+\begin_layout Paragraph
+
+	It will also require the organisers of conferences and showcases to input
+ their respective events so that they can be showed 
+\end_layout
+
+\begin_layout Paragraph
+
+	on the system.
+ The problem here lies in that organisers may not input their events and
+ so users will not becoe aware
+\end_layout
+
+\begin_layout Paragraph
+
+	of them.
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Section
+
+Assumptions and dependencies:
+\end_layout
+
+\begin_layout Paragraph
+
+	In order for this system to function properly we will have to make a few
+ assumptions about the users on the system.
+\end_layout
+
+\begin_layout Paragraph
+
+	Firstly we are assuming that every user has a smartphone or tablet capable
+ of running this system readily available to them.
+\end_layout
+
+\begin_layout Paragraph
+
+	We are also assuming that they will access to internet on a constant connection.
+\end_layout
+
+\begin_layout Paragraph
+
+	
+\end_layout
+
+\begin_layout Paragraph
+
+	We have also assumened that they are IT literate and thus able to make
+ use of the system.
+ This assumption is however
+\end_layout
+
+\begin_layout Paragraph
+
+	neccesary in order to make this system.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	We are assuming that all users will remain connected to the system once
+ on campus grounds for the detection of the 
+\end_layout
+
+\begin_layout Paragraph
+
+	traffic density calculations.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	This system will rely on several aspects being functional.
+ It relies on the Wi-Fi routers being spread across campus
+\end_layout
+
+\begin_layout Paragraph
+
+	grounds; that every user remains connected once on campus; that the hardware
+ needed to run the system is in fact capable
+\end_layout
+
+\begin_layout Paragraph
+
+	of doing so.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	This system also relies on users having adaquete devices capable of running
+ the system.
+ Another depencies is that the users
+\end_layout
+
+\begin_layout Paragraph
+
+	input their interests so that relevant events are shown to them.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Paragraph
+
+	The final assumption that we are making is that all university events as
+ well as the university calendar is up to date so as to 
+\end_layout
+
+\begin_layout Paragraph
+
+	correctly display only current events of the day.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
