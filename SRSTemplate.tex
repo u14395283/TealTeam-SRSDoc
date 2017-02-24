@@ -1,6 +1,10 @@
 %\documentclass[12pt]{IEEEtran}
 \documentclass[12pt, a4paper]{article}
 \usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{float}
 
 \begin{document}
 
@@ -189,18 +193,21 @@ for multiple users at the same time, this is to say, the system’s performance 
 			\end{itemize}
 		
 		\subsection{Use Cases And Actor-Interaction}
-			\begin{itemize}
-				\item Figure1: Login
-					\includegraphics[width = 6cm, height = 10cm]{Login.JPG}
-				\item Figure2: Select Destination
-					\includegraphics[width = 6cm, height = 10cm]{Select_Destination.JPG}
-				\item Figure3: Route User
-					\includegraphics[width = 6cm, height = 10cm]{Route_User.JPG}
-				\item Figure4: Login
-					\includegraphics[width = 6cm, height = 10cm]{Login.JPG}
-				\item Figure5: User fitness
-					\includegraphics[width = 6cm, height = 10cm]{User_fitness.JPG}
-			\end{itemize}
+	\begin{center}
+	\begin{itemize}
+		\item Figure1: Login
+			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Login.JPG} \end{figure}
+		\item Figure2: Select Destination
+			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Select_Destination.JPG} \end{figure}
+		\item Figure3: Route User
+			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Route_User.JPG} \end{figure}
+		\item Figure4: Login
+			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Login.JPG} \end{figure}
+		\item Figure5: User fitness
+			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{User_fitness.JPG} \end{figure}
+
+	\end{itemize}
+	\end{center}
 		
 	\subsection{Performance Requirements}
 		\subsubsection{Position Accuracy} The position of a device with NavUP activated should be accurately determined by the system - with no more than 15m of deviation from actual location of the device.
