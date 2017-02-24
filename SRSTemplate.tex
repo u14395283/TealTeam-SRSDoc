@@ -1,5 +1,5 @@
 %\documentclass[12pt]{IEEEtran}
-\documentclass[12pt, a4paper]{article}
+\documentclass{article}
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -11,7 +11,7 @@
 \begin{titlepage}
 	\begin{center}
 	\huge{University of Pretoria\\
-	Software Engineering 301 - COS 301}\\
+	Software Engineering - COS 301}\\
 	\line(1,0){400}\\
 	\huge{\bfseries NavUp Software Requirements Specification}\\
 	\line(1,0){200}\\
@@ -38,15 +38,11 @@
 \section{Introduction}
 \subsection{Purpose} 
 This is the system requirement specification (SRS) which aims to refine and expand on the required capabilities of the NavUP system.
-This document includes discussions on the individual low coupled subsystems as well as functional and quality requirements. This SRS is intended for the developers of the NavUP system as well as the clients who own the system. It will refine what is required of the system, what the main purpose of the system will be and what additional capabilities it will have.\\
-
+This document includes discussions on the individual low coupled subsystems as well as functional and quality requirements. This SRS is intended for the developers of the NavUP system as well as the clients who own the system. It will refine what is required of the system, what the main purpose of the system will be and what additional capabilities it will have.
 \subsection{Scope}
-The system being designed will be able to guide a variety of users such as students, lecturers, and visitors through the University of Pretoria's (UP) various campuses. This system will be identified as the NavUP system, referencing the navigation it will provide to visitors of the UP campuses. \\\\
-
+The system being designed will be able to guide a variety of users such as students, lecturers, and visitors through the University of Pretoria's (UP) various campuses. This system will be identified as the NavUP system, referencing the navigation it will provide to visitors of the UP campuses.\\\\
 The system will be able to route users between buildings and on a campus, as well as guiding them to the chosen lecture hall within the building. Notifications will also be sent to the users through the application when he/she is near a venue where public events are currently or will in future take place. There will not be any notifications sent if the users is not near the venue where these events will occur. The user will be able to create a profile, which will unlock additional functionalities such as sharing locations with friends, saving frequently used places, and adding timetable integration.\\\\
-
-The application will also be able to notify a user about high traffic areas which the user may want to avoid in order to arrive earlier at his/her destination. The system aims to simplify all users' navigation through the various UP campuses, ensuring quicker travel to destinations and avoidance of congested routes.\\
-
+The application will also be able to notify a user about high traffic areas which the user may want to avoid in order to arrive earlier at his/her destination. The system aims to simplify all users' navigation through the various UP campuses, ensuring quicker travel to destinations and avoidance of congested routes.
 \subsection{Definitions, Acronyms, and Abbreviation}
 SRS - System Requirement Specification\\
 UP - University of Pretoria\\
@@ -55,25 +51,61 @@ System - The NavUp system that is being designed.\\
 Product/Application - NavUP system\\
 Traffic - Areas in which there is a higher concentration of users which may affect arrival times.\\
 Hot Spots - Areas in which there are wi-fi access for the users.\\
-
+PVT - Position, Velocity and Time.\\\\
 \subsection{Overview}
 This document will provide more details abut the product (NavUP), including different interfaces, memory requirements, operations, as well as site adaption requirements. Functions, characteristics, constraints, and dependencies will also be discussed. Lastly the document will elaborate on  the different requirements, including external interface and functional and performance requirements.
 
 \section{Overall Description}
 	\subsection{Product Perspective}
 		\subsubsection{System Interfaces}
+		The  main systems that the application will be interfacing with are the campus systems that collaborate with the application. These include the UP calender, UP Server and the on campus network infrastructure.
 		\subsubsection{User Interfaces}
+		There are not many user interfaces because they will mainly be interacting with their smartphones and not branching to any other platforms. However the application itself will have many interfaces for the user to use. These include the fitness screen, navigation screen as well as many others.
 		\subsubsection{Hardware Interfaces}
+		The application will run in tandem with the onsite campus wireless routers as well as utilising the smartphones GPS connection to satellites.
 		\subsubsection{Software Interfaces}
-		\subsubsection{Communication Interfaces}
-		\subsubsection{Memory}
-		\subsubsection{Operations}
-		\subsubsection{Site Adaptation Requirements}
+		Software interfaces for the application will include many programming languages that will be used to create the application and to personalise based on a user’s preference.
 	\subsection{Product Functions}
+	This system would allow different user types to navigate around the University of Pretoria's main campus grounds.
+	This system would include three different types of users, namely: a student; a staff member and a visitor. All three
+	users of the system would be able search for specific buildings and receive a guided path from their current position 
+	to the searched area. The student and staff member users would both be able to search for events happening on 
+	the main campus grounds and be able to save their searched areas for quick searches in future use. The system
+	will also have restricted areas so as not to lead users through restricted areas. Popular areas, such as the food court,
+	will be ready to choose options making them easier and quicker to find. Emergency gathering areas will also be highlighted
+	and highly visible to all users.
 	\subsection{User Characteristics}
+	There will be three user types, the student; the staff member and the visitor. All users will be able to access
+	the basic functionalities of the system. They will be all be able to search for a location on the main campus 
+	of University of Pretoria. \\\\
+	A visitor user will be limited to searching for their conference or building that they
+	require as the rest of the functionality will be of no interest to them.\\\\
+	The student user will have access to basic finctionality of the system but will reeive push notifications of special events on
+	campus such as a conference on the field of study or a club performing a showcase. This functionality will be 
+	customizable for each user to choose the interests.\\\\
+	The staff member user will receive basic access to the system along with routes to restricted areas, upcoming conference
+	locations and special events on campus.
 	\subsection{Constraints}
+	The accuracy of this system will be limited as there is not Wi-Fi signal across the entire main campus. Most of the
+	system's functionalities will be unavailable without internet access for the user. This is particularily problematic
+	near the gates of the campus as the user will have to use their own internet connections.\\\\
+	To detect the traffic density on campus, most people on campus will have to be connected and their location trcked.
+	This becomes problematic when users are not connected as the traffic density will become inaccurate. Another potential
+	problem with this is the strain the users will put on the system when many users are on campus simultaneously.\\\\
+	This system will also rely on the University of Pretoia's calendar which require the calendar be up to date constantly.
+	It will also require the organisers of conferences and showcases to input their respective events so that they can be showed 
+	on the system. The problem here lies in that organisers may not input their events and so users will not become aware of them.
 	\subsection{Assumptions and Dependencies}
-
+	In order for this system to function properly we will have to make a few assumptions about the users on the system.
+	Firstly we are assuming that every user has a smartphone or tablet capable of running this system readily available to them.
+	We are also assuming that they will access to internet on a constant connection.\\\\
+	We have also assumened that they are IT literate and thus able to make use of the system. This assumption is however
+	neccesary in order to make this system.\\\\We are assuming that all users will remain connected to the system once on campus 		grounds for the detection of the traffic density calculations.\\\\
+	This system will rely on several aspects being functional. It relies on the Wi-Fi routers being spread across campus
+	grounds; that every user remains connected once on campus; that the hardware needed to run the system is in fact capable
+	of doing so.\\\\This system also relies on users having adaquete devices capable of running the system. Another depencies is 		that the usersinput their interests so that relevant events are shown to them. \\\\
+	The final assumption that we are making is that all university events as well as the university calendar is up to date so as to 
+	correctly display only current events of the day.
 \section{Specific Requirements}
 	\subsection{External Interface Requirements}
 		\subsubsection{System Interfaces}
@@ -91,7 +123,7 @@ such as getting directions, calendar, etc. If for any reason the user is not reg
 register by using the “Sign-up” option. So, provided that the user has successfully logged-in, the user can search for locations within 
 the campus. However, there might be many routes leading to the destination, so the user should have an option to choose an optimal 
 route out of many available routes. There are different types of users, of which are students, visitors and lecturers.\newline
-The NavUp system should have a "settings" option so that users can customize the application according to their needs. 
+The NavUp system should have a "settings" option so that users can customize the application according to their needs.\\\\
 The "settings" screen should display the user's options for application themes/colors, notification sounds, and fonts properties, etc.\\\\
 Certain users have different roles, for example; students will most likely use the software to navigate to lecture halls and access academic calendars, 
 but visitors will most likely use the software to navigate to offices and boardrooms or to find where their meetings are scheduled. 
@@ -172,7 +204,7 @@ for multiple users at the same time, this is to say, the system’s performance 
 							\end{itemize}
 						\item The user must be able to see arrival time
 					\end{itemize}
-				\item important
+				\item Important
 					\begin{itemize}
 						\item The UP admin must be able to update venues
 						\item The app must sync with the university calendar
@@ -195,16 +227,21 @@ for multiple users at the same time, this is to say, the system’s performance 
 		\subsection{Use Cases And Actor-Interaction}
 	\begin{center}
 	\begin{itemize}
-		\item Figure1: Login
 			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Login.JPG} \end{figure}
-		\item Figure2: Select Destination
+			%\begin{flushleft}
+			Figure 1: Login Use Case
+			%\end{flushleft}
 			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Select_Destination.JPG} \end{figure}
-		\item Figure3: Route User
+			Figure 2: Select Destination Use Case
+		%\item Figure 3: Route User
 			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Route_User.JPG} \end{figure}
-		\item Figure4: Login
-			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Login.JPG} \end{figure}
-		\item Figure5: User fitness
+			Figure 3: Route User Use Case
+		%\item Figure 4: Login
+			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{Campus_Events.JPG} \end{figure}
+			Figure 4: Campus Events Use Case
+		%\item Figure 5: User fitness
 			\begin{figure}[H]\includegraphics[width = \textwidth, height = 10cm]{User_fitness.JPG} \end{figure}
+			Figure 5: User fitness Use Case
 
 	\end{itemize}
 	\end{center}
